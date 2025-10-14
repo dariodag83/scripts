@@ -3,6 +3,7 @@
 # KDE (meglio non toccare questa sezione)
 apt install -y kde-plasma-desktop
 apt install -y firmware-linux firmware-linux-nonfree firmware-misc-nonfree
+apt install -y vim
 apt install -y openssh-client openssh-server
 apt install -y make qt6ct
 apt install -y okular
@@ -12,6 +13,13 @@ apt install -y f2fs-tools jfsutils ocfs2-tools reiserfsprogs udftools xfsprogs
 apt install -y filelight
 apt install -y ark arj lzop rar unrar
 apt install -y kio-gdrive
+apt install -y tlp powertop
+systemctl enable tlp --now
+
+# Laptop
+#apt install -y firmware-iwlwifi
+#apt install -y rfkill # abilita/disabilita i dispositivi wifi
+apt install -y acpi acpid
 
 # Libreoffice
 apt install -y libreoffice libreoffice-help-it libreoffice-l10n-it ibreoffice-qt6 libreoffice-plasma libreoffice-style-breeze
