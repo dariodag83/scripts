@@ -2,6 +2,7 @@
 
 # KDE (meglio non toccare questa sezione)
 apt install -y kde-plasma-desktop
+apt install -y firmware-linux firmware-linux-nonfree firmware-misc-nonfree
 apt install -y openssh-client openssh-server
 apt install -y make qt6ct
 apt install -y okular
