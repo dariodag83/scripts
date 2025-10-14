@@ -13,8 +13,7 @@ apt install -y f2fs-tools jfsutils ocfs2-tools reiserfsprogs udftools xfsprogs
 apt install -y filelight
 apt install -y ark arj lzop rar unrar
 apt install -y kio-gdrive
-apt install -y tlp powertop
-systemctl enable tlp --now
+apt install -y power-profiles-daemon
 
 # Laptop
 #apt install -y firmware-iwlwifi
