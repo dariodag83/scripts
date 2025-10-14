@@ -29,7 +29,7 @@ apt install -y thunderbird
 
 # Scanner
 apt install -y skanpage skanlite
-apt install -y tesseract-ocr tesseract-ocr-eng tesseract-ocr-fra tesseract-ocr-it #OCR
+apt install -y tesseract-ocr tesseract-ocr-eng tesseract-ocr-fra tesseract-ocr-ita #OCR
 
 # Kleopartra
 apt install -y kleopatra
