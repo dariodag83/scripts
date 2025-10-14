@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# KDE (meglio non toccare questa sezione)
+# KDE (do not modidy this section!!!)
 apt install -y kde-plasma-desktop
 apt install -y firmware-linux firmware-linux-nonfree firmware-misc-nonfree
 apt install -y vim
