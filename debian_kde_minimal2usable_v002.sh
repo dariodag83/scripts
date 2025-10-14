@@ -22,7 +22,7 @@ systemctl enable tlp --now
 apt install -y acpi acpid
 
 # Libreoffice
-apt install -y libreoffice libreoffice-help-it libreoffice-l10n-it ibreoffice-qt6 libreoffice-plasma libreoffice-style-breeze
+apt install -y libreoffice libreoffice-help-it libreoffice-l10n-it libreoffice-qt6 libreoffice-plasma libreoffice-style-breeze
 
 # Thunderbird
 apt install -y thunderbird
