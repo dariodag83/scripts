@@ -32,7 +32,7 @@ apt install -y skanpage skanlite
 apt install -y tesseract-ocr tesseract-ocr-eng tesseract-ocr-fra tesseract-ocr-it #OCR
 
 # Kleopartra
-apt install -y Kleopatra
+apt install -y kleopatra
 
 # Chrome
 wget -O chrome.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
@@ -41,7 +41,7 @@ rm -rf chrome.deb
 
 # Visual Studio Code
 wget -O vscode.deb "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64"
-apt install -y vscode.deb
+apt install -y ./vscode.deb
 rm -rf vscode.deb
 
 # Rust
