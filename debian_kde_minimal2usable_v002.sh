@@ -44,10 +44,12 @@ wget -O vscode.deb "https://code.visualstudio.com/sha/download?build=stable&os=l
 apt install -y ./vscode.deb
 rm -rf vscode.deb
 
+# Filezilla
+apt install -y filezilla
+
 # Rust
 apt install -y rustup
 rustup default stable
-
 
 # Playonlinux
 apt install -y playonlinux
@@ -62,18 +64,8 @@ chmod 644 /tmp/onlyoffice.gpg
 chown root:root /tmp/onlyoffice.gpg
 mv /tmp/onlyoffice.gpg /usr/share/keyrings/onlyoffice.gpg
 echo 'deb [signed-by=/usr/share/keyrings/onlyoffice.gpg] https://download.onlyoffice.com/repo/debian squeeze main' | sudo tee -a /etc/apt/sources.list.d/onlyoffice.list
+apt update
 apt install -y onlyoffice-desktopeditors onlyoffice-desktopeditors-help
-
-
-
-
-
-
-
-
-
-
-apt install -y filezilla
 
 
 
