@@ -8,7 +8,7 @@ dnf install fedora-workstation-repositories
 dnf install -y @kde-plasma-desktop
 dnf install -y firmware-linux firmware-linux-nonfree firmware-misc-nonfree
 dnf install -y vim htop
-dnf install -y openssh-client openssh-server
+dnf install -y openssh openssh-server
 dnf install -y make qt6ct
 dnf install -y krdc
 dnf install -y okular
