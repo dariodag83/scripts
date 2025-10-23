@@ -6,19 +6,19 @@ dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-
 # KDE (do not modify this section!!!)
 dnf install -y fedora-workstation-repositories
 dnf install -y @kde-desktop-environment 
-dnf install -y firmware-linux firmware-linux-nonfree firmware-misc-nonfree
+systemctl set-default graphical.target 
 dnf install -y vim htop lm_sensors
 dnf install -y openssh openssh-server openssh-clients
 dnf install -y make qt6ct
 dnf install -y krdc
 dnf install -y okular
-dnf install -y cups foomatic-db-compressed-ppds print-manager
+dnf install -y cups foomatic foomatic-db foomatic-db-ppds plasma-print-manager
 dnf install -y firefox firefox-langpacks
 dnf install -y f2fs-tools jfsutils ocfs2-tools udftools xfsprogs
 dnf install -y filelight
-dnf install -y ark arj lzop rar unrar
+dnf install -y ark arj lzop unrar
 dnf install -y kio-gdrive
-dnf install -y power-profiles-daemon
+#dnf install -y power-profiles-daemon
 
 # Ldnfop
 #dnf install -y firmware-iwlwifi
@@ -33,7 +33,7 @@ dnf install -y thunderbird
 
 # Scanner
 dnf install -y skanpage skanlite
-dnf install -y tesseract-ocr tesseract-ocr-eng tesseract-ocr-fra tesseract-ocr-ita #OCR
+dnf install -y tesseract tesseract-langpack-eng tesseract-langpack-fra tesseract-langpack-ita #OCR
 
 # Kleopartra
 dnf install -y kleopatra
