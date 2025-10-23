@@ -5,7 +5,7 @@ dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-
 
 # KDE (do not modify this section!!!)
 dnf install -y fedora-workstation-repositories
-dnf install -y @kde-desktop-environment
+dnf install -y @kde-desktop-environment 
 dnf install -y firmware-linux firmware-linux-nonfree firmware-misc-nonfree
 dnf install -y vim htop
 dnf install -y openssh openssh-server openssh-clients
