@@ -1,8 +1,11 @@
 #!/bin/bash
 
+# Install RPM Fusion repository (mandatory)
+dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+
 # KDE (do not modify this section!!!)
 dnf install fedora-workstation-repositories
-dnf install -y kde-plasma-desktop
+dnf install -y @kde-plasma-desktop
 dnf install -y firmware-linux firmware-linux-nonfree firmware-misc-nonfree
 dnf install -y vim
 dnf install -y openssh-client openssh-server
