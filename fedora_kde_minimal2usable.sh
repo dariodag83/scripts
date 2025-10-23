@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# Install RPM Fusion repository (mandatory)
+# Install RPM Fusion repository (mandatory for increase the packet list)
 dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
-# KDE (do not modify this section!!!)
+# KDE (do not modify this section!!!) - very basic installation
 dnf install -y fedora-workstation-repositories
 dnf install -y @kde-desktop-environment 
 systemctl set-default graphical.target 
@@ -18,9 +18,8 @@ dnf install -y f2fs-tools jfsutils ocfs2-tools udftools xfsprogs
 dnf install -y filelight
 dnf install -y ark arj lzop unrar
 dnf install -y kio-gdrive
-#dnf install -y power-profiles-daemon
 
-# Ldnfop
+# Laptop
 #dnf install -y firmware-iwlwifi
 #dnf install -y rfkill # abilita/disabilita i dispositivi wifi
 dnf install -y acpi acpid
@@ -43,6 +42,10 @@ dnf config-manager setopt google-chrome.enabled=1
 dnf check-update
 dnf install -y google-chrome-stable
 
+# Onlyoffice
+dnf install -y https://download.onlyoffice.com/repo/centos/main/noarch/onlyoffice-repo.noarch.rpm
+dnf install -y onlyoffice-desktopeditors
+
 # Visual Studio Code
 rpm --import https://packages.microsoft.com/keys/microsoft.asc
 echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\nautorefresh=1\ntype=rpm-md\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" | sudo tee /etc/yum.repos.d/vscode.repo > /dev/null
@@ -61,7 +64,3 @@ dnf install -y playonlinux
 
 # Paraview
 dnf install -y paraview
-
-# Onlyoffice
-dnf install -y https://download.onlyoffice.com/repo/centos/main/noarch/onlyoffice-repo.noarch.rpm
-dnf install -y onlyoffice-desktopeditors
