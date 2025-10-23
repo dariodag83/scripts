@@ -6,6 +6,7 @@ apt install -y firmware-linux firmware-linux-nonfree firmware-misc-nonfree
 apt install -y vim htop
 apt install -y openssh-client openssh-server
 apt install -y make qt6ct
+apt install -y krdc
 apt install -y okular
 apt install -y cups foomatic-db-compressed-ppds print-manager
 apt install -y firefox-esr-l10n-it firefox-esr
