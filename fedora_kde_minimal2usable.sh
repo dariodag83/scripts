@@ -62,5 +62,11 @@ rustup-init -y
 # Playonlinux
 dnf install -y playonlinux
 
+# Sqlite browser
+dnf install -y sqlitebrowser
+
+# Ocatve (full)
+dnf install -y octave*
+
 # Paraview
 dnf install -y paraview
