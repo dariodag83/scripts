@@ -27,6 +27,12 @@ dnf install -y acpi acpid
 # Libreoffice
 dnf install -y libreoffice libreoffice-langpack-it libreoffice-help-it
 
+# gimp
+dnf install -y gimp
+
+# Ktita
+dnf install -y krita
+
 # Thunderbird
 dnf install -y thunderbird
 
