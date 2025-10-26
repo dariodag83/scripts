@@ -24,6 +24,12 @@ apt install -y acpi acpid
 # Libreoffice
 apt install -y libreoffice libreoffice-help-it libreoffice-l10n-it libreoffice-qt6 libreoffice-plasma libreoffice-style-breeze
 
+# gimp
+dnf install -y gimp
+
+# Ktita
+dnf install -y krita
+
 # Thunderbird
 apt install -y thunderbird
 
