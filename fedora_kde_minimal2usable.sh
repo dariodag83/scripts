@@ -36,6 +36,9 @@ dnf install -y krita
 # Thunderbird
 dnf install -y thunderbird
 
+# OBS
+dnf install -y obs-studio-freeworld libavcodec-freeworld h264enc x264 x265 openh264 --allowerasing
+
 # Scanner
 dnf install -y skanpage skanlite
 dnf install -y tesseract tesseract-langpack-eng tesseract-langpack-fra tesseract-langpack-ita #OCR
