@@ -64,6 +64,12 @@ dnf install -y code
 # Filezilla
 dnf install -y filezilla
 
+# Xournal++
+dnf install -y xournalpp xournalpp-plugins xournalpp-ui
+
+# Logseq
+flatpak install -y logseq
+
 # Rust
 dnf install -y rustup
 rustup-init -y
