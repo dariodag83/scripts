@@ -27,6 +27,9 @@ dnf install -y acpi acpid
 # Libreoffice
 dnf install -y libreoffice libreoffice-langpack-it libreoffice-help-it
 
+# Video player
+dnf install -y mpv vlc
+
 # gimp
 dnf install -y gimp
 
