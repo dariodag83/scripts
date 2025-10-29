@@ -7,7 +7,7 @@ dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-
 dnf install -y fedora-workstation-repositories
 dnf install -y @kde-desktop-environment 
 systemctl set-default graphical.target 
-dnf install -y vim htop lm_sensors ncdu
+dnf install -y vim htop lm_sensors ncdu wget
 dnf install -y openssh openssh-server openssh-clients
 dnf install -y make qt6ct
 dnf install -y krdc
