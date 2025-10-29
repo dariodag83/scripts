@@ -7,7 +7,7 @@ dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-
 dnf install -y fedora-workstation-repositories
 dnf install -y @kde-desktop-environment 
 systemctl set-default graphical.target 
-dnf install -y vim htop lm_sensors
+dnf install -y vim htop lm_sensors ncdu
 dnf install -y openssh openssh-server openssh-clients
 dnf install -y make qt6ct
 dnf install -y krdc
@@ -29,6 +29,12 @@ dnf install -y libreoffice libreoffice-langpack-it libreoffice-help-it
 
 # Video player
 dnf install -y mpv vlc vlc-plugins-freeworld
+
+# Testdisk
+dnf install -y testdisk
+
+# Speedcrunch
+dnf -y install speedcrunch
 
 # gimp
 dnf install -y gimp
@@ -66,6 +72,9 @@ dnf install -y code
 
 # Filezilla
 dnf install -y filezilla
+
+# TeXmaker
+dnf -y install texmaker ipe texlive-babel-italian
 
 # Xournal++
 dnf install -y xournalpp xournalpp-plugins xournalpp-ui
