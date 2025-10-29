@@ -28,7 +28,7 @@ dnf install -y acpi acpid
 dnf install -y libreoffice libreoffice-langpack-it libreoffice-help-it
 
 # Video player
-dnf install -y mpv vlc
+dnf install -y mpv vlc vlc-plugins-freeworld
 
 # gimp
 dnf install -y gimp
