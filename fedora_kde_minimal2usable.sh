@@ -46,7 +46,7 @@ dnf install -y krita
 dnf install -y thunderbird
 
 # OBS
-dnf install -y obs-studio-freeworld libavcodec-freeworld h264enc x264 x265 openh264 --allowerasing
+dnf install -y obs-studio obs-studio-plugin-x264 --allowerasing
 
 # Scanner
 dnf install -y skanpage skanlite
