@@ -16,11 +16,7 @@ apt install -y ark arj lzop rar unrar
 apt install -y kio-gdrive
 apt install -y power-profiles-daemon
 # Set Networkmanager
-file="$1"
-vecchia="$2"
-nuova="$3"
-
-# Controlla che il file esista
+file="/etc/NetworkManager/NetworkManager.conf"
 if [ ! -f "$file" ]; then
     echo "Error: file '$file' does not exist"
 else
