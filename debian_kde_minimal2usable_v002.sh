@@ -24,6 +24,15 @@ apt install -y acpi acpid
 # Libreoffice
 apt install -y libreoffice libreoffice-help-it libreoffice-l10n-it libreoffice-qt6 libreoffice-plasma libreoffice-style-breeze
 
+# Video player
+dnf install -y mpv vlc vlc-plugins-freeworld
+
+# Testdisk
+dnf install -y testdisk
+
+# Speedcrunch
+dnf -y install speedcrunch
+
 # gimp
 dnf install -y gimp
 
