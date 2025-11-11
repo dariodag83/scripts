@@ -15,6 +15,18 @@ apt install -y filelight
 apt install -y ark arj lzop rar unrar
 apt install -y kio-gdrive
 apt install -y power-profiles-daemon
+# Set Networkmanager
+file="$1"
+vecchia="$2"
+nuova="$3"
+
+# Controlla che il file esista
+if [ ! -f "$file" ]; then
+    echo "Error: file '$file' does not exist"
+else
+    sed -i "s/managed=false/managed=true/g" "$file"
+fi
+
 
 # Laptop
 #apt install -y firmware-iwlwifi
