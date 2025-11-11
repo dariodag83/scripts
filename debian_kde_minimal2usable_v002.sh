@@ -52,11 +52,6 @@ apt install -y tesseract-ocr tesseract-ocr-eng tesseract-ocr-fra tesseract-ocr-i
 # Kleopartra
 apt install -y kleopatra
 
-
-#Finalize
-systemctl disable ifupdown
-systemctl reboot
-
 # Chrome
 wget -O chrome.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 apt install -y ./chrome.deb
@@ -92,3 +87,8 @@ apt install -y onlyoffice-desktopeditors onlyoffice-desktopeditors-help
 
 # Paraview
 apt install -y paraview
+
+
+#Finalize
+systemctl disable ifupdown
+systemctl reboot
