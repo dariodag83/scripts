@@ -25,16 +25,19 @@ apt install -y acpi acpid
 apt install -y libreoffice libreoffice-help-it libreoffice-l10n-it libreoffice-qt6 libreoffice-plasma libreoffice-style-breeze
 
 # Video player
-dnf install -y mpv vlc vlc-plugins-freeworld
+apt install -y mpv vlc vlc-plugin-fluidsynth vlc-plugin-jack vlc-plugin-pipewire vlc-plugin-svg
 
 # Testdisk
-dnf install -y testdisk
+apt install -y testdisk
 
 # Speedcrunch
-dnf -y install speedcrunch
+apt -y install speedcrunch
 
 # gimp
 dnf install -y gimp
+
+# OBS Studio
+apt install -y obs-studio v4l2loopback-dkms
 
 # Ktita
 dnf install -y krita
@@ -66,11 +69,8 @@ apt install -y filezilla
 apt install -y rustup
 rustup default stable
 
-# Playonlinux
-apt install -y playonlinux
-
-# Paraview
-apt install -y paraview
+# wine
+apt install -y wine
 
 # Onlyoffice
 mkdir -p -m 700 ~/.gnupg
@@ -82,5 +82,8 @@ echo 'deb [signed-by=/usr/share/keyrings/onlyoffice.gpg] https://download.onlyof
 apt update
 apt install -y onlyoffice-desktopeditors onlyoffice-desktopeditors-help
 
+## Octave
+#apt install -y octave octave-*
 
-
+# Paraview
+apt install -y paraview
