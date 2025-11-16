@@ -62,7 +62,6 @@ dnf install -y google-chrome-stable
 
 # Onlyoffice
 dnf install -y https://download.onlyoffice.com/repo/centos/main/noarch/onlyoffice-repo.noarch.rpm
-dnf insatll -y ./onlyoffice-repo.noarch.rpm
 dnf check-update
 dnf install -y onlyoffice-desktopeditors
 
